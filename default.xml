@@ -1,10 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="github" fetch="https://github.com/" />
   <remote name="udon-development"  fetch="https://github.com/udon-development" revision="lineage-20"/>
 
-  <!-- <project path="device/oneplus/negroni" remote="github" name="E1hanH/android_device_oneplus_negroni.git" revision="staging/lineage-20" /> -->
+  <project path="device/oneplus/negroni" remote="github" name="E1hanH/android_device_oneplus_negroni.git" revision="staging/lineage-20" />
   <project path="kernel/oneplus/sm8450" remote="github" name="E1hanH/android_kernel_oneplus_sm8450.git" revision="lineage-20" />
   <project path="device/oneplus/sm8450-common" remote="github" name="E1hanH/android_device_oneplus_sm8450-common.git" revision="staging/lineage-20" />
   
+</manifest> -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="OPLUS"
+      fetch="https://github.com/OnePlus-11-Development/"
+      sync-c="true"
+      sync-tags="false"
+      revision="lineage-20" />
+
+  <remote name="OPLUS_GITLAB"
+      fetch="https://gitlab.com/oneplus-11-development/"
+      sync-c="true"
+      sync-tags="false"
+      revision="lineage-20" />
+  
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr"/>
+  <project name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="OPLUS" revision="lineage-20.0"/>
+
+  <remove-project name="LineageOS/android_device_qcom_sepolicy_vndr"/>
+  <project name="android_device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="OPLUS" revision="lineage-20.0"/>
+
+  <project name="android_device_oneplus_salami" path="device/oneplus/salami" remote="OPLUS"/>
+  <project name="android_device_oneplus_salami-kernel" path="device/oneplus/salami-kernel" remote="OPLUS"/>
+  <project name="android_device_oneplus_sm8550-common" path="device/oneplus/sm8550-common" remote="OPLUS"/>
+  <project name="vendor_oneplus_salami" path="vendor/oneplus/salami" remote="OPLUS_GITLAB"/>
+  <project name="vendor_oneplus_sm8550-common" path="vendor/oneplus/sm8550-common" remote="OPLUS_GITLAB"/>
+
+  <project name="android_kernel_oneplus_sm8550" path="kernel/oneplus/sm8550" remote="OPLUS"/>
+  <project name="android_kernel_oneplus_sm8550-modules" path="kernel/oneplus/sm8550-modules" remote="OPLUS"/>
+
+  <project name="LineageOS/android_hardware_oplus" path="hardware/oplus" revision="lineage-20" />
 </manifest>
