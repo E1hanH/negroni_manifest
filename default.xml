@@ -3,7 +3,7 @@
   <remote  name="github" fetch="https://github.com/" />
   <remote name="udon-development"  fetch="https://github.com/udon-development" revision="lineage-20"/>
 
-  <project path="device/oneplus/negroni" remote="github" name="E1hanH/android_device_oneplus_negroni.git" revision="staging/lineage-20" />
+  <!-- <project path="device/oneplus/negroni" remote="github" name="E1hanH/android_device_oneplus_negroni.git" revision="staging/lineage-20" /> -->
   <project path="kernel/oneplus/sm8450" remote="github" name="E1hanH/android_kernel_oneplus_sm8450.git" revision="lineage-20" />
   <project path="device/oneplus/sm8450-common" remote="github" name="E1hanH/android_device_oneplus_sm8450-common.git" revision="staging/lineage-20" />
   
