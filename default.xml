@@ -22,5 +22,4 @@
   <project name="android_kernel_oneplus_sm8550" path="kernel/oneplus/sm8550" remote="OPLUS"/>
   <project name="android_kernel_oneplus_sm8550-modules" path="kernel/oneplus/sm8550-modules" remote="OPLUS"/>
 
-  <project name="LineageOS/android_hardware_oplus" path="hardware/oplus" revision="lineage-20" />
 </manifest>
