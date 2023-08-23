@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="github" fetch="https://github.com/" />
+  <remote name="udon-development"  fetch="https://github.com/udon-development" revision="lineage-20"/>
 
-  <!-- Kernel -->
+  <project path="device/oneplus/negroni" remote="github" name="E1hanH/android_device_oneplus_negroni.git" revision="staging/lineage-20" />
   <project path="kernel/oneplus/sm8450" remote="github" name="E1hanH/android_kernel_oneplus_sm8450.git" revision="lineage-20" />
-
-  <!--<project name="android_hardware_oplus" path="hardware/oplus" remote="udon-development"/>
-
-  <project name="android_device_oneplus_sm8450-common" path="device/oneplus/sm8450-common" remote="udon-development"/>
-  <project name="AdarshGrewal/proprietary_vendor_oneplus_sm8450-common" path="vendor/oneplus/sm8450-common" remote="gitlab"/>
-
-  <project name="android_device_oneplus_udon" path="device/oneplus/udon" remote="udon-development"/>
-  <project name="AdarshGrewal/proprietary_vendor_oneplus_udon" path="vendor/oneplus/udon" remote="gitlab"/> -->
+  <project path="device/oneplus/sm8450-common" remote="github" name="E1hanH/android_device_oneplus_sm8450-common.git" revision="staging/lineage-20" />
+  
 </manifest>
