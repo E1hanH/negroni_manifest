@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote  name="github" fetch="https://github.com/" />
 
   <!-- Kernel -->
   <project path="kernel/oneplus/sm8450" remote="github" name="E1hanH/android_kernel_oneplus_sm8450.git" revision="lineage-20" />
